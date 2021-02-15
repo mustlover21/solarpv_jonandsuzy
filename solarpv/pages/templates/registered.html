@@ -1,0 +1,17 @@
+{% extends 'base_template.html' %}
+
+{% load static %}
+
+{% block title %}Solar PV | Registered{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/registered.css' %}"> <!-- middle css -->
+      <!-- middle container -->
+			<div class="middle">
+        <h1>Welcome to Solar PV.
+          <br>
+          <br>You have successfully registered.
+          <br>To go to the home page, click <a href="{% static 'index.html' %}">here</a>.</h1>
+      </div> <!-- end middle -->
+
+{% endblock %}

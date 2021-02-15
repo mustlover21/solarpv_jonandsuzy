@@ -1,0 +1,62 @@
+{% extends 'base_template.html' %}
+
+{% load static %}
+
+{% block title %}Solar PV | Sitemap{% endblock %}
+
+{% block content %}
+	<link rel="stylesheet" href="{% static 'css/sitemap.css' %}"> <!-- middle css -->
+      <!-- middle container -->
+			<div class="middle">
+        <h1>Solar PV Sitemap</h1>
+        <div class="rowmain">
+
+          <div class="sm_col">
+            <h2><a href="{% url 'home' %}#home">Home</a></h2>
+            <h2><a href="{% url 'about' %}#about">About</a></h2>
+            <h2>Contact</h2>
+              <ul>
+                <li><a href="{% url 'contact' %}#cmap">Google Map</a></li>
+                <li><a href="{% url 'contact' %}#hours">Hours of Operations</a></li>
+                <li><a href="{% url 'contact' %}#form">Contact Us Form</a></li>
+              </ul>
+            <h2><a href="{% url 'register2' %}#reg">Register</a></h2>
+            <h2><a href="{% url 'login' %}#log">Login</a></h2>
+            <h2><a href="{% url 'tandc' %}#tou">Terms and Conditions</a></h2>
+            <h2><a href="{% url 'privacy' %}#priv">Privacy</a></h2>
+          </div>
+
+          <div class="sm_col">
+            <h2>Racks and Trackers</h2>
+            <ul>
+              <li><a href="{% url 'randt' %}#trackers">How Trackers Work</a></li>
+              <li><a href="{% url 'randt' %}#zome">Zomeworks Products</a></li>
+            </ul>
+            <h2>PV Modules</h2>
+            <ul>
+              <li><a href="{% url 'modules' %}#test">Testing and Certification</a></li>
+              <li><a href="{% url 'modules' %}#cert">Certification of PV Modules</a></li>
+              <li><a href="{% url 'modules' %}#rating">PV Rating</a></li>
+            </ul>
+            <h2>PV Systems</h2>
+            <ul>
+              <li><a href="{% url 'systems' %}#mandi">Monitoring and Inspection</a></li>
+              <li><a href="{% url 'systems' %}#pa">Performance Analysis</a></li>
+              <li><a href="{% url 'systems' %}#cs">Compare Systems</a></li>
+              <li><a href="{% url 'systems' %}#cert2">Certification</a></li>
+            </ul>
+            <h2>Data Analytics</h2>
+            <ul>
+              <li><a href="{% url 'data' %}#mlp">Module Lifetime Prediction</a></li>
+              <li><a href="{% url 'data' %}#ep">Energy Prediction</a></li>
+            </ul>
+            <h2>Cybersecurity</h2>
+            <ul>
+              <li><a href="{% url 'cyber' %}#art1">How cybersecurity is becoming crucial in solar’s digital age</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div> <!-- end middle -->
+
+{% endblock %}

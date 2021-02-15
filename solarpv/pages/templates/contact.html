@@ -1,0 +1,62 @@
+{% extends 'base_template.html' %}
+
+{% load static %}
+
+{% block title %}Solar PV | Contact Us{% endblock %}
+
+{% block content %}
+
+	<link rel="stylesheet" href="{% static 'css/contact.css' %}"> <!-- middle css -->
+      <!-- middle container -->
+			<div class="middle">
+        <div class="mapwrapper">
+          <div class="mapcontainer">
+            <iframe id="cmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1354.690139759775!2d-112.0794222281986!3d33.44184187866157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDI2JzMwLjYiTiAxMTLCsDA0JzQyLjYiVw!5e1!3m2!1sen!2sus!4v1610558397925!5m2!1sen!2sus"  framborder="0" allowfullscreen="" aria-hidden="false"></iframe>
+          </div>
+        </div>
+        <hr>
+        <div class="hours" id="hours">
+          <h3>Hours of Operation</h3>
+            <table>
+              <tr><th>Monday</th><td>10am - 6pm</td></tr>
+              <tr><th>Tuesday</th><td>10am - 6pm</td></tr>
+              <tr><th>Wednesday</th><td>10am - 6pm</td></tr>
+              <tr><th>Thursday</th><td>10am - 6pm</td></tr>
+              <tr><th>Friday</th><td>10am - 6pm</td></tr>
+              <tr><th>Saturday</th><td>10am - 6pm</td></tr>
+              <tr><th>Sunday</th><td>10am - 6pm</td></tr>
+            </table>
+        </div>
+        <br>
+        <hr>
+
+        <div class="container" id="form">
+          <div class="title">
+            Contact Us
+            <p>Please fill out the form to contact us.</p>
+          </div>
+          <form class="contact_form" action="/landing2.html" method="get|post" name="form" onclick="return validated()">
+            <div class="form-group">
+              <label for="fname"><b>Full Name</b></label>
+              <input type="text" name="fname" id="fname">
+              <div id="fname_error">Enter your full name</div>
+            </div>
+            <br>
+            <div class="form-group">
+              <label for="email"><b>Email</b></label>
+  					  <input type="text"  name="email" id="email">
+              <div id="email_error">Enter your email.</div>
+  					</div>
+            <br>
+            <div class="form-group">
+              <label for="message"><b>Message</b></label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              <div id="subject_error">Please enter a message.</div>
+            </div>
+            <br>
+          <!--button-->
+          <button type=submit>Send Email</button>
+        </div>
+      </div> <!-- end middle -->
+
+{% endblock %}

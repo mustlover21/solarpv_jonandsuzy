@@ -1,0 +1,90 @@
+/* register.css */
+
+.middle {
+  padding: 15px;
+}
+
+/* Add padding to containers */
+.middle .container {
+  position: relative;
+  padding-top: 15px;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 15px;
+}
+
+.middle .title {
+  font-size: 50px;
+  color: #0000ff;
+  text-align: center;
+  font-weight: bold;
+}
+
+.middle .title p {
+  font-size: 18px;
+  color: #000;
+}
+
+.middle .form-group {
+  padding-bottom: 15px;
+  font-size: 18px;
+}
+
+/* Full-width input fields */
+.middle input[type=text], input[type=password], input[type=email] {
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #fff;
+  background: #ddd;
+  padding: 15px;
+  font-size: 18px;
+  color: #000;
+}
+
+.middle input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.middle #passcheck {
+  padding: 0;
+  font-size: 18px;
+}
+
+/* Set a style for the submit button */
+.middle input[type=submit] {
+  background-color: #4CAF50;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.middle input[type=submit]:hover {
+  opacity: 1;
+}
+
+/* Add a black text color to links */
+a {
+  color: #000;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.middle .signin {
+  background-color: #f1f1f1;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.middle h1 {
+  text-align: center;
+}
+
+.middle span {
+  color: red;
+}

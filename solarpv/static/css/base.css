@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: verdana;
+  color: #000;
+}
+
+/* header */
+.header {
+  background-color: #fff;
+  padding: 15px;
+}
+
+.div1 {
+  background-color: #fff;
+  float: left;
+  padding-top: 15px;
+  padding-left: 30px;
+  font-family: impact, sans-serif;
+  width: 50%;
+}
+
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.div1 h3 {
+  color: #0066cc;
+  font-size: 25px;
+}
+
+.div2 {
+  background-color: #fff;
+  text-align: right;
+  float: right;
+  padding-top: 15px;
+  padding-right: 30px;
+}
+
+.div2 .links a {
+  padding: 10px;
+  font-size: 25px;
+}
+
+.div2 .social a {
+  padding: 5px;
+}
+
+/* navigation */
+.nav {
+  background-color: #ffff00;
+  padding: 15px;
+  font-size: 25px;
+}
+
+.nav a {
+  padding: 15px;
+}
+
+/* start main container */
+.main {
+  overflow: auto;
+  background-color: #d9d9d9;
+  padding: 15px;
+}
+
+/* left */
+.left {
+  float:left;
+  width:20%;
+  text-align:left;
+}
+
+.left h2 {
+  padding: 15px;
+}
+
+.left li {
+  font-size: 20px;
+}
+
+/* middle */
+.middle {
+  float:left;
+  background-color: #fff;
+  width:60%;
+  padding:0 20px;
+}
+
+/* right */
+.right {
+  background-color:#d9d9d9;
+  float:left;
+  width:20%;
+  padding:15px;
+  margin-top:7px;
+  text-align:left;
+}
+
+.right h2 {
+  text-align: center;
+  color: #cc0000;
+  font-size: 35px;
+}
+
+/* footer */
+.footer {
+  background-color: #ff9933;
+  text-align: center;
+  padding: 10px;
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  body {
+    width: 100%;
+  }
+}

@@ -1,0 +1,24 @@
+/* randt.css */
+
+.middle {
+  padding: 15px;
+}
+
+.middle h1 {
+  text-align: center;
+}
+
+.middle aside.figures {
+    overflow: hidden; /* only needed if floating the child elements */
+}
+
+.middle aside.figures figure {
+    display: inline-block;
+    border: 1px solid;
+}
+
+.middle aside.figures figcaption {
+background-color: #ff6600;
+font-weight: bold;
+text-align: center;
+}

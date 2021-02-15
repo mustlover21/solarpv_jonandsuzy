@@ -1,0 +1,65 @@
+{% extends 'base_template.html' %}
+
+{% load static %}
+
+{% block title %}Solar PV | Racks and Trackers{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/randt.css' %}"> <!-- middle css -->
+      <!-- middle container -->
+			<div class="middle">
+        <div class="trackers">
+          <h1 id="trackers">How Trackers Work</h1>
+          <h3>Article from <a href="http://www.zomeworks.com/photovoltaic-tracking-racks/how-trackers-work/">www.zomeworks.com</a></h3>
+          <p>The Track Rack begins the day facing west. As the sun rises in the east, it heats the unshaded west-side canister, forcing liquid into the shaded east-side canister. As liquid moves through a copper tube to the east-side canister, the tracker rotates so that it faces east.</p>
+          <p>The heating of the liquid is controlled by the aluminum shadow plates. When one canister is exposed to the sun more than the other, its vapor pressure increases, forcing liquid to the cooler, shaded side. The shifting weight of the liquid causes the rack to rotate until the canisters are equally shaded.</p>
+          <p>As the sun moves, the rack follows (at approximately 15 degrees per hour), continually seeking equilibrium as liquid moves from one side of the tracker to the other.</p>
+          <p>The rack completes its daily cycle facing west. It remains in this position overnight until it is “awakened” by the rising sun the following morning.</p>
+  			</div>
+
+        <h1><a href="http://www.zomeworks.com/photovoltaic-tracking-racks/" id="zome">Products from ZOMEWORKS</a></h1>
+        <aside class="figures">
+          <figure>
+          <img src="{% static 'images/UTRF-072.jpg' %}" width=150 height=150 alt="UTRF-072.jpg">
+          <figcaption>UTRF-072</figcaption>
+          </figure>
+
+          <figure>
+          <img src="{% static 'images/UTR-20.jpg' %}" width=150 height=150 alt="UTR-20.jpg">
+          <figcaption>UTR-20</figcaption>
+          </figure>
+
+          <figure>
+          <img src="{% static 'images/UTRF-090.jpg' %}" width=150 height=150 alt="UTRF-090.jpg">
+          <figcaption>UTRF-090</figcaption>
+          </figure>
+
+          <figure>
+          <img src="{% static 'images/UTRF-090.jpg' %}" width=150 height=150 alt="UTRF-090.jpg">
+          <figcaption>UTRF-090</figcaption>
+          </figure>
+        </aside>
+        <aside class="figures">
+          <figure>
+          <img src="{% static 'images/UTRF-090.jpg' %}" width=150 height=150 alt="UTRF-090.jpg">
+          <figcaption>UTRF-090</figcaption>
+          </figure>
+
+          <figure>
+          <img src="{% static 'images/UTRF-120.jpg' %}" width=150 height=150 alt="UTR-120.jpg">
+          <figcaption>UTRF-120</figcaption>
+          </figure>
+
+          <figure>
+          <img src="{% static 'images/UTRF-168.jpg' %}" width=150 height=150 alt="UTRF-168.jpg">
+          <figcaption>UTRF-168</figcaption>
+          </figure>
+
+          <figure>
+          <img src="{% static 'images/UTRK-040.jpg' %}" width=150 height=150 alt="UTRK-040.jpg">
+          <figcaption>UTRK-040</figcaption>
+          </figure>
+        </aside>
+      </div> <!-- end middle -->
+
+{% endblock %}

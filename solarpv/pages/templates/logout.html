@@ -1,0 +1,41 @@
+{% extends 'base_template.html' %}
+
+{% load static %}
+
+{% block title %}Solar PV | Logged Out{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/logout.css' %}"> <!-- middle css -->
+      <!-- middle container -->
+			<div class="middle" id="log">
+        <h1>You are now logged out. Thank you for using our system</h1>
+
+          <div class="container">
+            <div class="title">
+              User Login
+              <p>Please enter your username and password.</p>
+            </div>
+            <form class="login_form" action="{% url 'landing' %}" method="get|post" name="form" onclick="return validated()">
+  					<hr>
+              <div class="form-group">
+                <input autocomplete="off" type="text" name="username" placeholder="Username">
+                <div id="uname_error">Enter your username.</div>
+              </div>
+              <br>
+              <div class="form-group">
+                <input type="password" name="password" placeholder="Password">
+                <div id="psw_error">Enter your password.</div>
+              </div>
+              <p>New User? <a href="{% url 'register2' %}">Create</a> a new account.</p>
+              <br>
+              <!--button-->
+              <button type=submit>Login</button>
+
+              <p><a href="{% url 'password' %}">Forgot your Password?</a></p>
+              <p>By signing in, you agree to our <a href="{% url 'tandc.html' %}">Terms</a> & <a href="{% url 'privacy.html' %}">Privacy</a>.</p>
+
+	          </form>
+					</div>
+      </div> <!-- end middle -->
+
+{% endblock %}

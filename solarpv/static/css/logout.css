@@ -1,0 +1,89 @@
+/* logout.css */
+
+.middle {
+  padding: 15px;
+}
+
+/* Add padding to containers */
+.middle .container {
+  position: relative;
+  padding-top: 15px;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 15px;
+}
+
+.middle .title {
+  font-size: 50px;
+  color: #0000ff;
+  text-align: center;
+  font-weight: bold;
+}
+
+.middle .title p {
+  font-size: 18px;
+  color: #000;
+}
+
+.middle .form-group {
+  padding-bottom: 15px;
+  font-size: 18px;
+}
+
+/* Full-width input fields */
+.middle input[type=text], input[type=password] {
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #fff;
+  background: #ddd;
+  padding: 25px;
+  font-size: 18px;
+  color: #000;
+}
+
+.middle input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+.middle hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.middle h1 {
+  text-align: center;
+}
+
+/* Set a style for the submit button */
+.middle button {
+  background-color: #4CAF50;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: 0;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.middle button:hover {
+  opacity: 1;
+}
+
+.middle #uname_error,
+.middle #psw_error {
+  margin-top: 5px;
+  width: 345px;
+  font-size: 19px;
+  color: #C62828;
+  background: rgba(255,0,0,0.1);
+  text-align: center;
+  padding: 5px 8px;
+  border-radius: 3px;
+  border: 1px solid #EF9A9A;
+  display: none;
+}

@@ -1,0 +1,22 @@
+/* sitemap.css */
+
+.middle {
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.middle h1 {
+  text-align: center;
+}
+/* Create three equal columns that floats next to each other */
+.middle .sm_col {
+  float: left;
+  width: 45%;
+  padding: 10px;
+}
+/* Clear floats after the columns */
+.middle .rowmain:after {
+  content: "";
+  display: table;
+  clear: both;
+}

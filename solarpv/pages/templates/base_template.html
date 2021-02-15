@@ -1,0 +1,150 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- page title -->
+    <title>{% block title %}{% endblock %}</title>
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}"> <!-- base css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- social links -->
+
+
+  </head>
+  <body>
+
+    <!-- Header -->
+    <div class="header">
+
+      <!-- div1 Logo Container -->
+      <div class="div1">
+        <a href="{% url 'home' %}"><img src="{% static 'images/PV.png' %}" alt="logo" height="150px" width="400px"></a>
+        <h3>Research and Development<h3>
+      </div> <!-- End div1 -->
+
+      <!-- div2 links and social container -->
+			<div class="div2">
+
+        <!-- links div -->
+        <div class="links">
+          <p><a href="{% url 'about' %}" class="about">About Us</a>
+          <a href="{% url 'contact' %}" class="contact">Contact Us</a></p>
+        </div> <!-- end links -->
+
+        <!-- social media div -->
+        <div class="social">
+          <a href="https://www.facebook.com/solarpv" class="icons"><i class="fa fa-facebook" style="font-size:30px;color:blue;"></i></a>
+          <a href="https://www.twitter.com/solarpv" class="icons"><i class="fa fa-twitter" style="font-size:30px;color:lightblue;"></i></a>
+          <a href="https://www.plus.google.com/solarpv" class="icons"><i class="fa fa-google-plus" style="font-size:30px;color:green;"></i></a>
+          <a href="https://www.instagram.com/solarpv" class="icons"><i class="fa fa-instagram" style="font-size:30px;color:purple;"></i></a>
+          <a href="https://www.pintrest.com/solarpv" class="icons"><i class="fa fa-pinterest" style="font-size:30px;color:black;"></i></a>
+          <a href="https://www.youtube.com.com/solarpv" class="icons"><i class="fa fa-youtube" style="font-size:30px;color:red;"></i></a>
+        </div> <!-- end social -->
+
+      </div> <!-- End div2 -->
+
+    </div> <!-- End Header -->
+
+    <!-- Navigation Container -->
+    <div class="nav">
+      <nav>
+        <a href="{% url 'randt' %}" class="r_and_t">Racks and Trackers</a>
+        <a href="{% url 'modules' %}" class="pv_m">PV Module</a>
+        <a href="{% url 'systems' %}" class="pv_s">PV Systems</a>
+        <a href="{% url 'data' %}" class="data_ana">Data Analytics</a>
+        <a href="{% url 'cyber' %}" class="cybers">Cybersecurity</a>
+      </nav>
+    </div> <!-- end navigation -->
+
+    <!-- main container -->
+    <div class="main">
+
+      <!-- left container -->
+      <div class="left">
+        <h2 class="reg/login"><a href="{% url 'register2' %}">Register</a> | <a href="{% url 'login' %}">Login</a> </h2>
+        <h4>PV Module</h4>
+        <ul>
+          <li>Testing & Certification</li>
+          <li>PV Rating</li>
+        </ul>
+
+        <h4>PV System Performance</h4>
+        <ul>
+          <li>Monitoring & Inspection</li>
+          <li>Performance Analysis</li>
+          <li>Compare system</li>
+          <li>Certification</li>
+        </ul>
+
+        <h4>Data Analytics</h4>
+        <ul>
+          <li>Module lifetime prediction</li>
+          <li>Energy Prediction</li>
+        </ul>
+
+        <h4>Cybersecurity and Smart Grid Technologies</h4>
+        <a href="https://solarpvuniversity.com"><h4>Solar PV University</h4></a>
+      </div> <!-- end left -->
+
+
+
+      <!-- middle container -->
+			<div class="middle">
+        {% block content %}
+        {% endblock %}
+			</div> <!-- end middle -->
+
+
+
+      <!-- Right container -->
+      <div class="right">
+        <h2>News & Events</h2>
+        <br>
+        <h3>US News and Events</h3>
+        <ul>
+          <li><a href="https://news.google.com/articles/CAIiELkVdjRWUlftmmX9bOUNGxEqGQgEKhAIACoHCAowocv1CjCSptoCMPrTpgU?hl=en-US&gl=US&ceid=US%3Aen">Military Joint Chiefs condemn 'sedition and insurrection' at Capitol as federal and local officials scramble to ensure security</a></li>
+          <br>
+          <li><a href="https://news.google.com/articles/CAIiEK2mIycHQzS0UORexVyY4FoqGAgEKg8IACoHCAowjtSUCjC30XQwzqe5AQ?hl=en-US&gl=US&ceid=US%3Aen">Biden team sees risks in Trump decision to widen vaccine pool</a></li>
+          <br>
+          <li><a href="https://news.google.com/articles/CAIiEDSnqggNgOlERMsmgUcPOowqGQgEKhAIACoHCAowtYmYCzC8s68DMJWBzwY?hl=en-US&gl=US&ceid=US%3Aen">70TB of Parler user's data leaked by security researchers</a></li>
+          <br>
+        </ul>
+        <h3>Solar News and Events</h3>
+        <ul>
+          <li><a href="https://news.google.com/articles/CAIiEImOsfHZw406SXk6kxV3qpYqGQgEKhAIACoHCAow3rv_CjC88fgCMIrVsAY?hl=en-US&gl=US&ceid=US%3Aen">Key 2020 US Solar PV Cost Trends and a Look Ahead</a></li>
+          <br>
+          <li><a href="https://news.google.com/articles/CBMiZmh0dHBzOi8vcHYtbWFnYXppbmUtdXNhLmNvbS8yMDIxLzAxLzEyL3N1bnJpc2UtYnJpZWYtbnJlbC11cHMtaXRzLWN5YmVyc2VjdXJpdHktcmVzZWFyY2gtY2FwYWJpbGl0aWVzL9IBAA?hl=en-US&gl=US&ceid=US%3Aen">Sunrise brief: NREL ups its cybersecurity research capabilities</a></li>
+          <br>
+          <li><a href="https://news.google.com/articles/CBMiV2h0dHBzOi8vcHYtbWFnYXppbmUtdXNhLmNvbS8yMDIxLzAxLzEyL2FtYXpvbi10by1zaGFyZS0xMjAtbXctb2Ytc29sYXItd2l0aC1kLWMtc3VidXJiL9IBAA?hl=en-US&gl=US&ceid=US%3Aen">Amazon to share 120 MW of solar with D.C. suburb</a></li>
+          <br>
+        </ul>
+      </div><!-- end right -->
+
+    </div><!-- end main -->
+
+    <!-- footer -->
+    <div class="footer">
+
+      <!-- top footer -->
+      <div class="row-top">
+        <p>Solar PV<br/>
+        1234 Industrial Way | Phoenix, AZ 87654<br/>
+        (480) 555-9876 | www.solarpv.com | info@solarpv.com</p>
+        <p>Copyright &copy; 2021</p>
+      </div> <!-- end top footer -->
+
+      <!-- bottom footer -->
+      <div class="row-btm">
+        <p><a href="{% url 'sitemap' %}" class="sitemap">Site Map</a> | <a href="{% url 'tandc' %}" class="tandc">Terms & Conditions</a> | <a href="{% url 'privacy' %}" class="privacy">Privacy Policy</a> | <a href="{% url 'about' %}" class="about">About Us</a></p>
+      </div> <!-- end bottom footer -->
+
+    </div> <!-- end footer -->
+
+  </body>
+</html>

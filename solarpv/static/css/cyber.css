@@ -1,0 +1,34 @@
+/* cyber.css */
+
+.middle {
+  padding: 15px;
+}
+
+.middle h1 {
+  color: #000;
+}
+
+.middle h2 {
+  color: #003d99;
+}
+
+.middle h3 {
+  color: #999999;
+}
+
+.middle h4 {
+  color: #000;
+}
+
+.middle h5 {
+  color: #0066ff;
+  font-size: 1.2em
+}
+
+.middle p {
+  padding-left: 15px;
+}
+
+.middle span {
+  color:#999999;
+}

@@ -1,0 +1,85 @@
+{% extends 'base_template.html' %}
+
+{% load static %}
+
+{% block title %}Solar PV | PV Modules{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/modules.css' %}"> <!-- middle css -->
+      <!-- middle container -->
+			<div class="middle">
+        <h2 id="test">Testing and Certification</h2>
+
+        <p>All our products are tested and certified.</p>
+        <h3><a href="https://www.tuv.com/usa/en/photovoltaic-modules.html">TÜV Rheinland</a></h3>
+        <img src="{% static 'images/TUV.png' %}" alt="tuv cert" height="100" width="260"><br>
+        <a href="https://www.tuv.com/content-media-files/master-content/services/products/1091-tuv-rheinland-photovoltaic-modules/t%C3%BCv-rheinland_brochure_pv-modules.pdf" >TÜV Rheinland Brochure PDF</a>
+
+        <h3><a href="https://www.csagroup.org/testing-certification/product-areas/power-generation-energy-storage/photovoltaic-pv/">CSAGroup</a></h3>
+        <img src="{% static 'images/csa.png' %}" alt="csa cert">
+
+        <h3> Excerpts from TÜV Rheinland brochure </h3>
+
+        <p>At the core of all photovoltaic (PV) systems are PV modules. Their quality and reliability are ultimately one of the key factors
+        in the smooth and efficient operation of a PV power station during its 25-year life cycle. PV modules become key investment
+        factors for governments, investors, and buyers worldwide.</p>
+
+        <p>Since its invention in 1839, PV power generation technology has undergone tremendous transformations as a result of
+        concerted efforts by professionals worldwide, particularly in increasing efficiency and adapting the PV technology to the
+        various areas of application. New installation markets emerge, while pressure to further reduce module prices has intensified.
+        Challenges for the products arise and the need to accurately predict and assess performance, reliability and durability has
+        increased. TÜV Rheinland provides up-to-date solutions to improve the safety, reliability and quality of PV modules. As the
+        independent third party, we are well trusted by investors, owners and lenders.</p>
+
+        <p>We have been pioneering in the PV industry for more than 35 years, making us an undisputed authority in PV testing and
+        certification. We provide tailor-made solutions to PV manufacturers around the world, backed by our global network. Through
+        our world-class capabilities, we have gained a solid reputation worldwide with recognition and trust also from both overseas
+        and domestic investors, lenders and authorities. </p>
+
+        <p>Our experts test and certify PV modules based on standards including IEC 61215 series, IEC 61730-1, -2 series, UL 61730 and CAN/CSA 61730-1/-2. Our unique, customised solutions, such as our energy yield testing service, help manufacturers
+        gain differentiated competitiveness. Globally accepted by buyers and investors, TÜV Rheinland’s test mark, certificates and bankability reports are the proof of your products’ trusted quality and performance, thus enabling you to gain worldwide market access.</p>
+
+        <h3 id="cert">CERTIFICATION OF PV MODULES</h3>
+        <p>Proof of certification for the PV module manufacturers, retailers and EPCs is one of the most important prerequisites for a successful market development. The certification services of TÜV Rheinland consist of the following process steps:
+        <ul>
+          <li>Laboratory tests on samples for a module family or type</li>
+          <li>Recurring factory inspection</li>
+          <li>Certificate and TÜV Rheinland test mark</li>
+          <li>Certificate of conformity (CoC) or declarations for individual markets</li>
+          <li>Bankability reports</li>
+          <li>Multivariant precision measurement reports</li>
+          <li>Custom performance, reliability and durability reports</li>
+        </ul>
+        </p>
+
+        <h2 id="rating">PV Rating</h2>
+
+        <h4>Article Excepts from <a href="https://news.energysage.com/what-is-the-power-output-of-a-solar-panel/">www.energysage.com</a></h4>
+        <h4>Article Posted on JANUARY 6, 2021</h4>
+        <span>Author</span> by VIKRAM AGGARWAL.
+        <h3>How much energy does a solar panel produce?</h3>
+        <p>For the sake of example, if you are getting 5 hours of direct sunlight per day in a sunny state like California you can calculate your solar panel output this way: 5 hours x 290 watts (an example wattage of a premium solar panel) = 1,450 watts-hours, or roughly 1.5 kilowatt-hours (kwh). Thus, the output for each solar panel in your array would produce around 500-550 kWh of energy per year.</p>
+
+        <p>All solar panels are rated by the amount of DC (direct current) power they produce under standard test conditions. Solar panel output is expressed in units of watts (W) and represents the panel’s theoretical power production under ideal sunlight and temperature conditions. Most home solar panels on the market today have power output ratings ranging from 250 to 400 watts, with higher power ratings generally considered preferable to lower power ratings. Pricing in solar is typically measured in dollars per watt ($/W), and the total wattage of your solar panels plays a significant part in the overall cost of your solar system.</p>
+
+        <h3>What can you power with a single solar panel?</h3>
+        <p>In the example above, the solar panel is producing 1.5 kWh per day, which ends up being about 45 kWh per month. That’s enough energy to power some small appliances without too much issue, but if you want to cover the energy used by your property’s climate control systems or large cooking appliances, you’ll need more solar panels.</p>
+
+        <h3>Why does solar panel output matter? How to calculate panel wattage</h3>
+        <p>Power output is an important metric for your home or commercial solar panel system. When you buy or install a solar photovoltaic (PV) energy system, the price you pay is typically based on the total power output of the solar panels in the system (expressed in watts or kilowatts).</p>
+
+        <p>Solar panel wattage represents a solar panel’s theoretical power production under ideal sunlight and temperature conditions. Wattage is calculated by multiplying volts x amps where volts represents the amount of force of the electricity and amperes (amps) refers to the aggregate amount of energy used. The financial savings you derive from the solar system is a result of the electric energy that it generates over time (expressed in kilowatt-hours).</p>
+
+        <h3>Size vs. quantity: typical solar panel ratings and capacity</h3>
+        <p>Power output on its own is not a complete indicator of a panel’s quality and performance characteristics. For some panels, their high power output rating is due to their larger physical size rather than their higher efficiency or technological superiority.</p>
+
+        <p>For example, if two solar panels both have 15 percent efficiency ratings, but one has a power output rating of 250 watts and the other is rated at 300 watts, it means that the 300-watt panel is about 20 percent physically larger than the 250-watt panel. That’s why EnergySage and other industry experts view panel efficiency as being a more indicative criterion of solar panel performance strength than solar capacity alone.</p>
+
+        <p>In practical terms, a solar panel system with a total rated capacity of 5kW (kilowatts) could be made up of either 20 250-Watt panels or 16 300-Watt panels. Both systems will generate the same amount of power in the same geographic location. Though a 5kW system may produce 6,000 kilowatt-hours (kWh) of electricity every year in Boston, that same system will produce 8,000 kWh every year in Los Angeles because of the amount of sun each location gets each year.</p>
+
+        <p>The electricity generated by a solar PV system is governed by its rated power output, but it’s also dependent on other factors such as panel efficiency and temperature sensitivity, as well as the degree of shading that the system experiences and the tilt angle and azimuth of the roof on which it’s installed. As a general rule of thumb, it makes prudent financial sense to install a solar system with as much power output as you can afford (or that your roof will accommodate). That will ensure you maximize your savings and speed up the payback period of your solar energy system.</p>
+
+        <p>Find out more about average prices for solar across the country for 3kW,4kW, 5kW, 6kW, 7kW, 8 kW and 10kW solar systems. The EnergySage Solar Marketplace makes it easy for you to compare your savings from solar panels with various power output ratings.</p>
+      </div> <!-- end middle -->
+
+{% endblock %}

@@ -1,0 +1,25 @@
+/* module.css */
+
+.middle {
+ padding: 15px;
+}
+
+.middle h2 {
+  color: #003d99;
+}
+
+.middle h3 {
+  color: #0066ff;
+}
+
+.middle h4 {
+  color: #cccccc;
+}
+
+.middle span {
+  color: #00cccc;
+}
+
+.middle p {
+  padding-left: 15px;
+}
