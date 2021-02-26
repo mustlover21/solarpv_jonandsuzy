@@ -20,6 +20,8 @@ def landing2(request):
     return render(request, "landing2.html", {})
 def password(request):
     return render(request, "password.html", {})
+def portal(request):
+    return render(request, "portal.html", {})
 def privacy(request):
     return render(request, "privacy.html", {})
 def randt(request):

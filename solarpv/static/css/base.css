@@ -84,9 +84,9 @@ body {
 }
 
 /* middle */
-.middle {
+.middle-container {
   float:left;
-  background-color: #fff;
+  background: #FFF;
   width:60%;
   padding:0 20px;
 }
