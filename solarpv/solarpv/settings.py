@@ -39,6 +39,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'website.apps.WebsiteConfig',
     'clients.apps.ClientsConfig',
+    'users.apps.UsersConfig',
+    'manufacturers.apps.ManufacturersConfig',
+    #'products.apps.ProductsConfig',
+    #'testresults.apps.TestresultsConfig',
+    #'testlabs.apps.TestlabsConfig',
 ]
 
 MIDDLEWARE = [

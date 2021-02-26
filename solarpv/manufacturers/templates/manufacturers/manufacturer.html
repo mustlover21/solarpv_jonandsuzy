@@ -1,0 +1,29 @@
+{% extends 'base_template.html' %}
+{% load static %}
+{% block title %}Solar PV | Manufacturer{% endblock %}
+
+{% block content %}
+
+	<link rel="stylesheet" href="{% static 'css/manufacturer.css' %}"> <!-- middle css -->
+
+      <!-- middle container -->
+			<div class="middle">
+
+        <h1>Add Manufacturer</h1>
+        <form method="POST" action="{% url 'manufacturers:manufacturer' %}">
+          {% csrf_token %}
+          <div class="form-group">
+            <input type="text" placeholder="Manufacturer Name" name="mName">
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Country" name="registeredCountry">
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Contact Name" name="cName">
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+
+      </div> <!-- end middle -->
+
+{% endblock %}

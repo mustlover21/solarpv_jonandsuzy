@@ -11,27 +11,34 @@
       <!-- middle container -->
 			<div class="middle">
 				<h1>User Portal</h1>
+
 				<div class="row">
 	        <div class="col">
-	          <a href=""><p>Client</p><br/>
+	          <a href="{% url 'clients:newclient' %}"><p>Add A Client</p><br/>
 	          <i class="far fa-id-card" style="color:#000"></i></a>
 	        </div>
-	        <div class="col">
+					<div class="col">
+	          <a href="{% url 'manufacturers:manufacturer' %}"><p>Add Manufacturer</p><br/>
+	          <i class="fas fa-building" style="color:#23AC34"></i></a>
+	        </div>
+
+				</div>
+				<div class="row">
+					<div class="col">
 	          <a href=""><p>Location</p><br/>
 	          <i class="fas fa-map-marked-alt" style="color:#123456"></i></a>
 	        </div>
-				</div>
-				<div class="row">
 	        <div class="col">
-	          <a href=""><p>Product</p><br/>
+	          <a href=""><p>Register A Product</p><br/>
 	          <i class="fas fa-solar-panel" style="color:#ffd633"></i></a>
 	        </div>
-	        <div class="col">
+				</div>
+
+				<div class="row">
+					<div class="col">
 	          <a href=""><p>Test Standard</p><br/>
 	          <i class="far fa-file-alt" style="color:#808080"></i></a>
 	        </div>
-				</div>
-				<div class="row">
 	        <div class="col">
 	          <a href=""><p>Certificate</p><br/>
 	          <i class="fas fa-award" style="color:#ff0000"></i></a>
