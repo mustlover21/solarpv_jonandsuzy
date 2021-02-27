@@ -9,4 +9,4 @@ def product_view(request):
             form.save()
         return render(request, 'products/product.html', {})
     else:
-        return render(request, 'products/products.html', {})
+        return render(request, 'products/product.html', {})
