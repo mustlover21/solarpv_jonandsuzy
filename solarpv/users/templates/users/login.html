@@ -13,7 +13,8 @@
               User Login
               <p>Please enter your username and password.</p>
             </div>
-            <form class="login_form" action="{% url 'landing' %}" method="get|post" name="form" onclick="return validated()">
+            <form action="" method="POST">
+							{% csrf_token %}
   					<hr>
               <div class="form-group">
                 <input autocomplete="off" type="text" name="username" placeholder="Username">
