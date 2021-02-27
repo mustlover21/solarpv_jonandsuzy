@@ -2,8 +2,8 @@ from django.conf.urls import url
 from django.urls import path
 from . import views
 
-app_name = 'manufacturers'
+app_name = 'products'
 
 urlpatterns = [
-    path('manufacturer/', views.manufacturer_view, name='manufacturer'),
+    path('product/', views.product_view, name='product'),
 ]

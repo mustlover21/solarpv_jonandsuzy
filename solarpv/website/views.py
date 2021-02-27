@@ -1,40 +1,40 @@
 from django.shortcuts import render
 
-def home(request):
+def home_view(request):
     return render(request, "index.html", {})
-def about(request):
+def about_view(request):
     return render(request, "about.html", {})
-def contact(request):
+def contact_view(request):
     return render(request, "contact.html", {})
-def login(request):
-    return render(request, "login.html", {})
-def modules(request):
+#def login(request):
+#    return render(request, "login.html", {})
+def modules_view(request):
     return render(request, "modules.html", {})
-def cyber(request):
+def cyber_view(request):
     return render(request, "cyber.html", {})
-def data(request):
+def data_view(request):
     return render(request, "data.html", {})
-def landing(request):
+def landing_view(request):
     return render(request, "landing.html", {})
-def landing2(request):
+def landing2_view(request):
     return render(request, "landing2.html", {})
-def password(request):
+def password_view(request):
     return render(request, "password.html", {})
-def portal(request):
+def portal_view(request):
     return render(request, "portal.html", {})
-def privacy(request):
+def privacy_view(request):
     return render(request, "privacy.html", {})
-def randt(request):
+def randt_view(request):
     return render(request, "randt.html", {})
-def register2(request):
-    return render(request, "register2.html", {})
-def sitemap(request):
+#def register2(request):
+#    return render(request, "register2.html", {})
+def sitemap_view(request):
     return render(request, "sitemap.html", {})
-def systems(request):
+def systems_view(request):
     return render(request, "systems.html", {})
-def tandc(request):
+def tandc_view(request):
     return render(request, "tandc.html", {})
-def registered(request):
+def registered_view(request):
     return render(request, "registered.html", {})
-def logout(request):
-    return render(request, "logout.html", {})
+#def logout(request):
+#    return render(request, "logout.html", {})
