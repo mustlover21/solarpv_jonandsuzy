@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'clients.apps.ClientsConfig',
     'users.apps.UsersConfig',
     'manufacturers.apps.ManufacturersConfig',
-    #'products.apps.ProductsConfig',
+    'products.apps.ProductsConfig',
     #'testresults.apps.TestresultsConfig',
     #'testlabs.apps.TestlabsConfig',
 ]
